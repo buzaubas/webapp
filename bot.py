@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=os.getenv("TOKEN"))
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
