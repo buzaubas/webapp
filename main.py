@@ -1,5 +1,9 @@
 from flask import Flask, render_template  
-  
+import bot
+from bot import start_bot
+
+start_bot()
+
 app = Flask(__name__, template_folder='.')  
   
 @app.route("/")  
